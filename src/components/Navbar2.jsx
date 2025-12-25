@@ -17,13 +17,13 @@ const Navbar2 = () => {
 
       {/* Desktop Nav Links */}
       <div className="hidden md:flex space-x-4 lg:space-x-6">
-        {["/my-pitches", "/leaderboard", "/explore", "/create-pitch", "/create-post", "/dashboard"].map((path, i) => (
+        {["/my-pitches", "/trending-pitches", "/explore", "/create-pitch", "/create-post", "/dashboard"].map((path, i) => (
           <Link
             key={path}
             to={path}
             className="text-gray-700 hover:text-blue-600 text-sm lg:text-base"
           >
-            {["My Pitches", "Leaderboard", "Explore", "Create Pitch", "Create Post", "Dashboard"][i]}
+            {["My Pitches", "Trending Pitches", "Explore", "Create Pitch", "Create Post", "Dashboard"][i]}
           </Link>
         ))}
       </div>
@@ -71,8 +71,8 @@ const Navbar2 = () => {
             <Link to="/my-pitches" className="text-gray-700 hover:text-blue-600">
               My Pitches
             </Link>
-            <Link to="/leaderboard" className="text-gray-700 hover:text-blue-600">
-              Leaderboard
+            <Link to="/trending-pitches" className="text-gray-700 hover:text-blue-600">
+              Trending Pitches
             </Link>
             <Link to="/explore" className="text-gray-700 hover:text-blue-600">
               Explore

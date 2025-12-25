@@ -18,6 +18,7 @@ import EditPitch from './pages/EditPitch.jsx';
 import EditPost from './pages/EditPost.jsx';
 import HiringForm from './pages/HiringForm.jsx';
 import SentimentAndFeedbackInsights from './pages/SentimentAndFeedbackInsights.jsx';
+import TrendingPitches2 from './pages/TrendingPithces2.jsx';
 
 
 
@@ -33,13 +34,14 @@ function App() {
         <Route path="/create-pitch" element={<PitchModalForm />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/create-post" element={<CreatePost />} />
-        <Route path="/leaderboard" element={<Leaderboard />} />
+        {/* <Route path="/leaderboard" element={<Leaderboard />} /> */}
         <Route path="/event-publish" element={<EventForm />} />
         <Route path="/view-pitch" element={<ViewPitch />} />
         <Route path="/edit-pitch" element={<EditPitch />} />
         <Route path="/edit-post" element={<EditPost />} />
         <Route path="/hiring-form" element={<HiringForm />} />
         <Route path="/sentiment-insights" element={<SentimentAndFeedbackInsights />} />
+        <Route path="/trending-pitches" element={<TrendingPitches2 />} />
 
 
 

@@ -7,7 +7,7 @@ import Dash_Cards from "./Dash_Cards";
 
 const Dashboard = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col min-h-screen bg-gray-50">
       {/* Top Navigation */}
       <Navbar2 />
 
