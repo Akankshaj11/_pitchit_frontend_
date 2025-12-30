@@ -241,10 +241,10 @@ const TrendingPitches2 = () => {
 
       <main className="flex-grow px-4 sm:px-6 md:px-10 lg:px-20 py-10">
         {/* Header */}
-       <h1 className="text-2xl font-semibold mb-6 flex items-center gap-1">
-  <AiFillCaretUp className="text-red-600 text-4xl animate-bounce" />
-  Trending Pitches
-</h1>
+        <h1 className="text-2xl font-semibold mb-6 flex items-center gap-1">
+          <AiFillCaretUp className="text-red-600 text-4xl animate-bounce" />
+          Trending Pitches
+        </h1>
 
 
 

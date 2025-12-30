@@ -8,17 +8,20 @@ import MyPitches from './pages/MyPitches.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import RecentPitches from './pages/RecentPitches.jsx';
 import PitchModalForm from './pages/PitchModalForm.jsx';
-import JoinedTeams from './pages/JoinedTeams.jsx';
+// import JoinedTeams from './pages/JoinedTeams.jsx';
 import Explore from './pages/Explore.jsx';
 import CreatePost from './pages/CreatePost.jsx';
-import Leaderboard from './pages/Leaderboard.jsx';
+// import Leaderboard from './pages/Leaderboard.jsx';
 import EventForm from './pages/EventForm.jsx'
 import ViewPitch from './pages/ViewPitch.jsx'
 import EditPitch from './pages/EditPitch.jsx';
 import EditPost from './pages/EditPost.jsx';
 import HiringForm from './pages/HiringForm.jsx';
 import SentimentAndFeedbackInsights from './pages/SentimentAndFeedbackInsights.jsx';
-import TrendingPitches2 from './pages/TrendingPithces2.jsx';
+import TrendingPitches2 from './pages/TrendingPitches2.jsx';
+import CommunityEngagementAnalytics from './pages/CommunityEngagementAnalytics.jsx';
+import Sidebar from './components/Sidebar.jsx';
+import PitchScoreAnalytics from './pages/PitchScoreAnalytics.jsx';
 
 
 
@@ -40,12 +43,11 @@ function App() {
         <Route path="/edit-pitch" element={<EditPitch />} />
         <Route path="/edit-post" element={<EditPost />} />
         <Route path="/hiring-form" element={<HiringForm />} />
-        <Route path="/sentiment-insights" element={<SentimentAndFeedbackInsights />} />
         <Route path="/trending-pitches" element={<TrendingPitches2 />} />
-
-
-
-        
+        <Route path="/sentiment-insights" element={<SentimentAndFeedbackInsights />} />
+        <Route path="/community-engagement-analytics" element={<CommunityEngagementAnalytics />} />
+        <Route path="/pitch-score-analytics" element={<PitchScoreAnalytics />} />
+    
 
       </Routes>
     </BrowserRouter>

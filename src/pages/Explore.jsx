@@ -216,10 +216,7 @@ const Explore = () => {
 
       <main className="flex-grow px-4 sm:px-6 md:px-10 lg:px-20 py-10">
         {/* Header */}
-        {/* <div className="flex items-center gap-2 text-3xl font-semibold mb-6">
-          <FaLightbulb className="text-yellow-500" />
-          <h1>Explore</h1>
-        </div> */}
+        
 
         {/* Browse by Category */}
         <div className="flex items-center gap-2 text-2xl font-semibold mb-3">
@@ -227,48 +224,28 @@ const Explore = () => {
           <h2>Explore by Category</h2>
         </div>
 
-        {/* <p className="text-gray-600 mb-4 text-sm">
-          Click on a category to filter by Pitch or Post
-        </p> */}
-
         {/* Category Buttons */}
-        <div className="flex flex-wrap gap-3 sticky top-16 bg-gray-50 py-5 z-10">
+        <div className="flex flex-wrap gap-3 sticky top-14 bg-gray-50 py-5 z-10">
           {["All", ...categories].map((cat) => (
             <div key={cat} className="relative">
-              {/* <button
+             
+              <button
                 onClick={() => {
                   setSelectedCategory(cat);
                   setSelectedType("All");
                   setOpenDropdown(openDropdown === cat ? null : cat);
                 }}
-                className={`px-4 py-1 rounded-full text-sm transition ${
-                  selectedCategory === cat && selectedType === "All"
-                    ? "bg-blue-600 text-white"
-                    : "bg-white text-gray-700 hover:bg-gray-200"
-                }`}
+                className={`px-4 py-1 rounded-full text-sm transition ${selectedCategory === cat
+                    ? selectedType === "All"
+                      ? "bg-indigo-600 text-white"
+                      : selectedType === "pitch"
+                        ? "bg-indigo-700 text-white"
+                        : "bg-indigo-600 text-white"
+                    : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                  }`}
               >
                 {cat}
-              </button> */}
-
-
-              <button
-  onClick={() => {
-    setSelectedCategory(cat);
-    setSelectedType("All");
-    setOpenDropdown(openDropdown === cat ? null : cat);
-  }}
-  className={`px-4 py-1 rounded-full text-sm transition ${
-    selectedCategory === cat
-      ? selectedType === "All"
-        ? "bg-indigo-600 text-white"
-        : selectedType === "pitch"
-        ? "bg-indigo-700 text-white"
-        : "bg-indigo-600 text-white"
-      : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-  }`}
->
-  {cat}
-</button>
+              </button>
 
 
               {/* Dropdown */}
@@ -282,12 +259,11 @@ const Explore = () => {
                         setSelectedType(type);
                         setOpenDropdown(null);
                       }}
-                      className={`px-4 py-1 text-sm text-gray-700 hover:bg-gray-100 w-full text-left ${
-                        selectedCategory === cat &&
-                        selectedType.toLowerCase() === type.toLowerCase()
+                      className={`px-4 py-1 text-sm text-gray-700 hover:bg-gray-100 w-full text-left ${selectedCategory === cat &&
+                          selectedType.toLowerCase() === type.toLowerCase()
                           ? "bg-gray-200"
                           : ""
-                      }`}
+                        }`}
                     >
                       {type}
                     </button>
@@ -351,22 +327,22 @@ const Explore = () => {
                     </div> */}
 
 
-                   <div className="flex justify-between mt-4 text-gray-500 text-sm items-center">
-  <div className="flex gap-4 items-center">
-    <span className="flex items-center gap-1">
-      <AiFillHeart className="text-red-500 text-lg" /> {item.likes}
-    </span>
-    <span className="flex items-center gap-1">
-      <BiCommentDetail className="text-gray-500 text-lg" /> {item.comments}
-    </span>
-    <span className="flex items-center gap-1">
-      <GiTwoCoins className="text-yellow-500 text-lg" /> {item.coins}
-    </span>
-  </div>
-  <button className="text-blue-600 text-xs hover:underline">
-    View
-  </button>
-</div>
+                    <div className="flex justify-between mt-4 text-gray-500 text-sm items-center">
+                      <div className="flex gap-4 items-center">
+                        <span className="flex items-center gap-1">
+                          <AiFillHeart className="text-red-500 text-lg" /> {item.likes}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <BiCommentDetail className="text-gray-500 text-lg" /> {item.comments}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <GiTwoCoins className="text-yellow-500 text-lg" /> {item.coins}
+                        </span>
+                      </div>
+                      <button className="text-blue-600 text-xs hover:underline">
+                        View
+                      </button>
+                    </div>
 
 
 
