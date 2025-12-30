@@ -22,6 +22,7 @@ import TrendingPitches2 from './pages/TrendingPitches2.jsx';
 import CommunityEngagementAnalytics from './pages/CommunityEngagementAnalytics.jsx';
 import Sidebar from './components/Sidebar.jsx';
 import PitchScoreAnalytics from './pages/PitchScoreAnalytics.jsx';
+import PredictiveInsights from './pages/PredictiveInsights.jsx';
 
 
 
@@ -47,6 +48,7 @@ function App() {
         <Route path="/sentiment-insights" element={<SentimentAndFeedbackInsights />} />
         <Route path="/community-engagement-analytics" element={<CommunityEngagementAnalytics />} />
         <Route path="/pitch-score-analytics" element={<PitchScoreAnalytics />} />
+        <Route path="/p" element={<PredictiveInsights />} />
     
 
       </Routes>
