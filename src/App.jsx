@@ -24,6 +24,7 @@ import Sidebar from './components/Sidebar.jsx';
 import PitchScoreAnalytics from './pages/PitchScoreAnalytics.jsx';
 import PredictiveInsights from './pages/PredictiveInsights.jsx';
 import ApplicationForm from './pages/new/ApplicationForm.jsx';
+import InterviewForm from './pages/new/InterviewForm.jsx';
 
 
 
@@ -56,7 +57,7 @@ function App() {
         {/* new forms */}
 
         <Route path="/application-form" element={<ApplicationForm />} />
-        <Route path="/application-form" element={<ApplicationForm />} />
+        <Route path="/interview-form" element={<InterviewForm />} />
     
 
       </Routes>
