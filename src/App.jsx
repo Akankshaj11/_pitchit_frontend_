@@ -23,6 +23,7 @@ import CommunityEngagementAnalytics from './pages/CommunityEngagementAnalytics.j
 import Sidebar from './components/Sidebar.jsx';
 import PitchScoreAnalytics from './pages/PitchScoreAnalytics.jsx';
 import PredictiveInsights from './pages/PredictiveInsights.jsx';
+import ApplicationForm from './pages/new/ApplicationForm.jsx';
 
 
 
@@ -48,7 +49,14 @@ function App() {
         <Route path="/sentiment-insights" element={<SentimentAndFeedbackInsights />} />
         <Route path="/community-engagement-analytics" element={<CommunityEngagementAnalytics />} />
         <Route path="/pitch-score-analytics" element={<PitchScoreAnalytics />} />
-        <Route path="/p" element={<PredictiveInsights />} />
+        <Route path="/predictive-insights" element={<PredictiveInsights />} />
+
+
+
+        {/* new forms */}
+
+        <Route path="/application-form" element={<ApplicationForm />} />
+        <Route path="/application-form" element={<ApplicationForm />} />
     
 
       </Routes>
